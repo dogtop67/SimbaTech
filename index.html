@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimbaTech — Всесвіт гаджетів від кота Сімби</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <!-- Векторний логотип з вушками Сімби -->
+                <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="simbaGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#ff7a00"/>
+                            <stop offset="100%" stop-color="#6b21a8"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M10 18L13 6L22 14H26L35 6L38 18C41 21 42 25 42 30C42 38.8366 33.9411 44 24 44C14.0589 44 6 38.8366 6 30C6 25 7 21 10 18Z" fill="url(#simbaGrad)"/>
+                    <text x="24" y="34" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="15">ST</text>
+                </svg>
+                <span>SimbaTech</span>
+            </a>
+            <nav class="nav">
+                <a href="#">ГОЛОВНА</a>
+                <a href="#catalog">ТОВАРИ</a>
+                <a href="#contacts">КОНТАКТИ</a>
+                <a href="#support">ПІДТРИМКА</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Головний банер (Hero) -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <div class="hero-content">
+                        <h1>Всесвіт гаджетів<br>для тебе та Сімби.</h1>
+                        <a href="#catalog" class="btn-outline">Переглянути каталог</a>
+                    </div>
+                    <div class="hero-image-box">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80" alt="Фіолетовий смартфон SimbaPhone">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція "Хіти продажів" -->
+        <section id="catalog" class="bestsellers">
+            <div class="container">
+                <h2>Хіти продажів</h2>
+                <div class="products-grid">
+                    
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=500&q=80" alt="Ноутбук SimbaBook Pro">
+                        </div>
+                        <h3>SimbaBook Pro</h3>
+                        <p class="price">40 000 грн</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=500&q=80" alt="Смарт-годинник CatWatch Ultra">
+                        </div>
+                        <h3>CatWatch Ultra</h3>
+                        <p class="price">5 000 грн</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Навушники PurrPods Max">
+                        </div>
+                        <h3>PurrPods Max</h3>
+                        <p class="price">3 000 грн</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80" alt="Планшет SimbaPad Air">
+                        </div>
+                        <h3>SimbaPad Air</h3>
+                        <p class="price">20 000 грн</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція зворотного зв'язку -->
+        <section id="support" class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Не знайшли те,<br>що хотіли?</h2>
+                    <div class="cta-img-box">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=500&q=80" alt="Рудий кіт Сімба допоможе обрати гаджет">
+                    </div>
+                    <form class="phone-form" action="#">
+                        <input type="tel" placeholder="Ваш номер телефону" required>
+                        <button type="submit">Зателефонуйте</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer id="contacts" class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <svg class="logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 18L13 6L22 14H26L35 6L38 18C41 21 42 25 42 30C42 38.8366 33.9411 44 24 44C14.0589 44 6 38.8366 6 30C6 25 7 21 10 18Z" fill="url(#simbaGrad)"/>
+                        <text x="24" y="34" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="15">ST</text>
+                    </svg>
+                    <span>SimbaTech</span>
+                </a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p>+38 (044) 123-45-67</p>
+                <p>info@simbatech.ua</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Соціальні мережі</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
